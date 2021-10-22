@@ -1,6 +1,6 @@
 package com.day4PracticeProblems;
 
-public class WelcomeDisplay {
+public class SinglePlayerInit {
     public static void main(String[] args) {
         display();
     }
