@@ -29,16 +29,12 @@ public class DiceRollSinglePlayer {
                     player1Position = 6;
                 } else
                     player1Position = startPosition;
-            }
-
-            else if (player1Position > 94) {
+            } else if (player1Position > 94) {
                 if ((100 - player1Position) == rolledDice) {
                     player1Position += rolledDice;
                     break;
                 }
-            }
-
-            else
+            } else
                 player1Position += rolledDice;
         }
         System.out.println("Players Position is: " + player1Position + " & die rolled " + dieRollCounterP01 + " times.");
