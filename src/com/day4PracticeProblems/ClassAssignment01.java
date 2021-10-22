@@ -62,6 +62,18 @@ public class ClassAssignment01 {
         System.out.println("\nBubbleSort Yet to be completed.\n");
     }
 
+    private  void palindromePrint() {
+
+        Scanner scanPal2 = new Scanner(System.in);
+        System.out.println("\nPlease Enter number of digits you want to print palindrome chain for.");
+        int palindrome2Input = scanPal2.nextInt();
+        this.pal2Input = palindrome2Input;
+        for (int i=1; i<=pal2Input/2;i++){System.out.print(i);}
+        if (palindrome2Input%2 != 0){System.out.print((palindrome2Input/2)+1);}
+        for (int j=pal2Input/2; j>0;j--) {System.out.print(j);}
+
+    }
+
     public static void main(String[] args) {
         System.out.println("Start Of Main Method.");
 
@@ -94,18 +106,6 @@ public class ClassAssignment01 {
             }
         }
         System.out.println("\nEnd Of Main Method.");
-    }
-
-    private  void palindromePrint() {
-
-        Scanner scanPal2 = new Scanner(System.in);
-        System.out.println("\nPlease Enter number of digits you want to print palindrome chain for.");
-        int palindrome2Input = scanPal2.nextInt();
-        this.pal2Input = palindrome2Input;
-        for (int i=1; i<=pal2Input/2;i++){System.out.print(i);}
-        if (palindrome2Input%2 != 0){System.out.print((palindrome2Input/2)+1);}
-        for (int j=pal2Input/2; j>0;j--) {System.out.print(j);}
-
     }
 }
 
