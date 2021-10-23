@@ -25,7 +25,7 @@ public class DiceRollWithSnakeLadder {
         int player1Position = startPosition;
         int dieRollCounterP01 = 0;
 
-        while (player1Position <= 100) {
+        while (player1Position <= 50) {
             int rolledDice = (int) (6.0 * Math.random() + 1);  //Dice Generator
             dieRollCounterP01++;
 
