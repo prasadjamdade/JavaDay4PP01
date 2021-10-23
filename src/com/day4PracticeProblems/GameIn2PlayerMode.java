@@ -60,23 +60,23 @@ public class GameIn2PlayerMode {
     }
 
     public void displayWinner(GameIn2PlayerMode player) {
-        int Player01 = 0;
-        int Player02 = 0;
+        int player01 = 0;
+        int player02 = 0;
 
         System.out.println("\n\nPlayer 1 Gameplay\n");
         System.out.println("\n\nPlayer 2 Gameplay\n");
-        while (Player01 <= 100 || Player02 <= 100) {
+        while (player01 <= 100 || player02 <= 100) {
 
-            Player01 = player.GameStart(Player01);
+            player01 = player.GameStart(player01);
             System.out.println("\n\nPlayer 01 Position is: " + playerPosition + ", Dice face shows: " + rolledDice + " & die rolled " + dieRollCounterP01 + " times.");
-            Player02 = player.GameStart(Player02);
+            player02 = player.GameStart(player02);
             System.out.println("\n\nPlayer 02 Position is: " + playerPosition + ", Dice face shows: " + rolledDice + " & die rolled " + dieRollCounterP01 + " times.");
 
-            if (Player01 == 100) {
+            if (player01 == 100) {
                 System.out.println("Player 01 Wins.");
                 break;
             }
-            if (Player02 == 100) {
+            if (player02 == 100) {
                 System.out.println("Player 02 Wins.");
                 break;
             }
